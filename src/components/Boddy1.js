@@ -3,7 +3,6 @@ import './Styles/Boddy1.css';
 import { gridColumn } from '../utils/gridcolumn';
 import { Box, Grid, Flex } from '@chakra-ui/react';
 import Formulario from './Formulario';
-import IMG1 from '../images/img1.jpeg';
 
 function Boddy1() {
   return (
