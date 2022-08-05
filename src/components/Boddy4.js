@@ -1,29 +1,30 @@
-            import React from 'react';
-            import './Styles/Boddy4.css';
-            import { gridColumn } from '../utils/gridcolumn';
-            import { Box, Grid, Flex } from '@chakra-ui/react';
-            import VideoImage from '../images/video.jpeg';
+import React from 'react';
+import './Styles/Boddy4.css';
+import { gridColumn } from '../utils/gridcolumn';
+import { Box, Grid, Flex } from '@chakra-ui/react';
+import VideoImage from '../images/video.jpeg';
+import Empresas from '../images/empresas.jpeg';
 
-            function Boddy4() {
+function Boddy4() {
 
-            return (
-                <div boddy4Inteiro>
-                <Flex
-                    flexGrow={1}
-                    id="content"
-                    justifyContent="center"
-                    height="30vh"
+return (
+    <div boddy4Inteiro>
+        <Flex
+            flexGrow={1}
+            id="content"
+            justifyContent="center"
+            height="30vh"
+        >
+            <Box className="boddy4" gridColumn={gridColumn.gc12}>
+                <Grid
+                     gridTemplateColumns="repeat(12, 1fr)"
+                    gap={'10px'}
+                    mx={6}
+                    width="100%"
+                    height="100%"
+                    maxBlockSize={'300px'}
                 >
-                    <Box className="boddy4" gridColumn={gridColumn.gc12}>
-                    <Grid
-                        gridTemplateColumns="repeat(12, 1fr)"
-                        gap={'10px'}
-                        mx={6}
-                        width="100%"
-                        height="100%"
-                        maxBlockSize={'300px'}
-                    >
-                        <Box gridColumn={gridColumn.gc12}>
+                    <Box gridColumn={gridColumn.gc12}>
                         <Grid
                         gridTemplateColumns="repeat(12, 1fr)"
                         gap={'10px'}
@@ -44,21 +45,33 @@
                         </Grid>
                         </Box>
                         <Box className="anuncio2" gridColumn={gridColumn.gc12}>
+                        <Grid
+                        gridTemplateColumns="repeat(12, 1fr)"
+                        gap={'10px'}
+                        mx={6}
+                        width="100%"
+                        height="100%"
+                        maxBlockSize={'300px'}
+                    >
                         <Box gridColumn={gridColumn.gc6}>
                             <h1 className="h1Anuncio2"><b>Torne sua operação de Marketing</b></h1>
                             <h1 className="h1Anuncio2"><b>ainda mais poderosa</b></h1>
                             <p className="p1Anuncio2">O RD Station Marketing se conecta as principais ferramentas</p>
                             <p className="p2Anuncio2">nacionais e internacionais</p>
                             <button className="buttonCreatePart4">
-                    <a
-                    href="https://app.rdstation.com.br/signup"
-                    target="_blank"
-                    rel="noreferrer"
-                    >
-                        CRIAR conta gratuita
-                    </a> 
-                </button>
+                                <a
+                                    href="https://app.rdstation.com.br/signup"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    CRIAR conta gratuita
+                                </a> 
+                            </button>
                         </Box>
+                        <Box gridColumn={gridColumn.gc6}>
+                            <img src={Empresas} alt="Empresas"></img>
+                        </Box>
+                        </Grid>
                         </Box>
                     </Grid>
                     </Box>
