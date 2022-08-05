@@ -89,14 +89,22 @@ function Boddy3() {
           </Box>
           </Grid>
             </Box>
-            <Box  mr={10} className="texto2BoddyPart3" gridColumn={gridColumn.gc12}>
-          <h1>Por que mais de 25.000 empresas</h1>
-          <h1>escolheram o RD Station?</h1>
-          <p>Combinamos nossos produtos de Marketing e Vendas com pessoas que se importam com seus resultados e um</p>
-          <p>ecossisitema que apoia o seu negócio do planejamento à prática</p>
+            <Box className="texto2BoddyPart3" gridColumn={gridColumn.gc12}>
+          <h1 className="title3BoddyPart3"><b>Por que mais de 25.000 empresas</b></h1>
+          <h1 className="title3BoddyPart33"><b>escolheram o RD Station?</b></h1>
+          <p className="texto3BoddyPart3">Combinamos nossos produtos de Marketing e Vendas com pessoas que se importam com seus resultados e um</p>
+          <p className="texto3BoddyPart3">ecossisitema que apoia o seu negócio do planejamento à prática</p>
+          <div className="buttonPart3">
           <button className="buttonCreatePart3">
-                  CRIAR MINHA CONTA
+                 <a
+                 href="https://app.rdstation.com.br/signup"
+                 target="_blank"
+                 rel="noreferrer"
+                 >
+                    CRIAR MINHA CONTA
+                 </a> 
             </button>
+        </div>
           </Box>
         </Box>
       </Flex>
