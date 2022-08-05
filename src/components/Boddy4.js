@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Styles/Boddy4.css';
 import { gridColumn } from '../utils/gridcolumn';
 import { Box, Grid, Flex } from '@chakra-ui/react';
 import VideoImage from '../images/video.jpeg';
 import Empresas from '../images/empresas.jpeg';
+import ModalVideo from 'react-modal-video';
 
 function Boddy4() {
+
+    const [open, setOpen] = useState(false);
 
     return (
         <div boddy4Inteiro>
@@ -33,11 +36,18 @@ function Boddy4() {
                                 height="100%"
                                 maxBlockSize={'300px'}
                             >
+                                <ModalVideo channel='youtube' autoplay isOpen={open} videoId="lGCesaaLi4s" onClose={() => setOpen(false)} />
+
                                 <Box className="anuncio" gridColumn={gridColumn.gc6}>
                                     <h1 className="h1Anuncio"><b>Entenda melhor como o RD</b></h1>
                                     <h1 className="h1Anuncio"><b>Station marketing funciona na</b></h1>
                                     <h1 className="h1Anuncio"><b>prática</b></h1>
-                                    <button className="buttonPlay">ASSISTA A DEMONSTRAÇÃO</button>
+                                    <button
+                                    className="buttonPlay"
+                                    onClick={() => setOpen(!open)}
+                                    >
+                                        ASSISTA A DEMONSTRAÇÃO
+                                    </button>
                                 </Box>
                                 <Box gridColumn={gridColumn.gc6}>
                                     <img className="imageVideo" src={VideoImage} alt="Video"></img>

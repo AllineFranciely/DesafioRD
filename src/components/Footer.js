@@ -18,6 +18,14 @@ function Footer() {
                 justifyContent="center"
                 height="30vh"
             >
+                <Grid
+                        gridTemplateColumns="repeat(12, 1fr)"
+                        gap={'10px'}
+                        mx={6}
+                        width="100%"
+                        height="100%"
+                        maxBlockSize={'100px'}
+                    >
                 <Box className="footer" gridColumn={gridColumn.gc12}>
                     <Grid
                         gridTemplateColumns="repeat(12, 1fr)"
@@ -52,7 +60,7 @@ function Footer() {
                                     </button>
                                     <button>
                                         <a
-                                            href="https://twitter.com/rd_station"
+                                            href="https://www.facebook.com/ResultadosDigitais/"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
@@ -100,6 +108,7 @@ function Footer() {
                         </Box>
                     </Grid>
                 </Box>
+                </Grid>
             </Flex>
 
         </div>
