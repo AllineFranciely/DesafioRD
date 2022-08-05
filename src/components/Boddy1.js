@@ -32,7 +32,7 @@ function Boddy1() {
             </Box>
             <Box className="boddy2" mt={3} gridColumn={gridColumn.gc6}>
               <h1 className="boddy2Title"><b>Estaremos juntos desde o primeiro passo!</b></h1>
-              <p className="boddy2Text">Se vc ainda não sabe como extrair o máximo das ações digitais, não tem problema. {'\n'}  {'\n'} </p>
+              <p className="boddy2Text">Se vc ainda não sabe como extrair o máximo das ações digitais, não tem problema.</p>
               <p className="boddy2Text">O <b>RD Station Marketing</b> é mais que uma ferramenta, nos importamos</p>
               <p className="boddy2Text">com os seus resultados.</p>
               <p className="boddy2Text2"><b>Estaremos com você do planejamento até a prática!</b></p>
