@@ -4,6 +4,7 @@ import Boddy1 from '../components/Boddy1';
 import Boddy2 from '../components/Boddy2';
 import Boddy3 from '../components/Boddy3';
 import Boddy4 from '../components/Boddy4';
+import Footer from '../components/Footer';
 
 function Home () {
   return (
@@ -13,6 +14,7 @@ function Home () {
       <Boddy2 />
       <Boddy3 />
       <Boddy4 />
+      <Footer />
     </div>
   );
 }
