@@ -98,6 +98,7 @@ function Formulario() {
                 <Input
                   id="Name"
                   name="Name"
+                  type="text"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.Name}
@@ -108,6 +109,7 @@ function Formulario() {
                 <Input
                   id="Email"
                   name="Email"
+                  type="email"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.Email}
@@ -120,6 +122,7 @@ function Formulario() {
                   className="inputMask"
                   id="Phone"
                   name="Phone"
+                  type="number"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.Phone}
@@ -201,7 +204,13 @@ function Formulario() {
               </Box>
               <Box ml={5} mt={3} gridColumn={gridColumn.gc6}>
                 <button className="buttonCreate">
-                  CRIAR MINHA CONTA
+                  <a
+                    href="https://app.rdstation.com.br/signup"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    CRIAR MINHA CONTA
+                  </a>
                 </button>
               </Box>
             </Box>
