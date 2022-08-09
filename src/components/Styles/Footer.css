@@ -1,6 +1,7 @@
 .footerInteiro {
     background-color: #19C1CE;
-    margin-top: 200%;
+    margin-top: 233%;
+    width: 100%;
 }
 
 .footer {
@@ -19,5 +20,5 @@
 .pFooter {
     font-size: x-small;
     margin-left: 77%;
-    margin-top: 20px;
+    margin-top: 7px;
 }
